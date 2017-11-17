@@ -1,0 +1,98 @@
+
+.top { 
+    color: darkslategray;
+    background-color: lightslategrey;
+    /* margin: 2%; */
+    /* border-radius: 8px; */
+    border: 2px dashed darkslategray;
+}
+
+.searchBar { 
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+input { 
+    width:50%;    
+    border-radius: 8px;
+    height: 30px;    
+    border:none;
+    background-color: lightgray;
+    text-align: center;
+    box-shadow:10px 10px 5px #888888;
+    margin: auto;
+}
+
+input:hover { 
+    background-color: lightblue;
+    color: darkblue;
+}
+
+h3 { 
+    border-bottom: 1px solid black;
+    margin: 2%;
+    font-weight: normal;
+    text-align: center;
+}
+
+#current-city { 
+    font-weight: bold;
+    color: darkblue;
+}
+
+.code, .temp, .humidity, .conditions { 
+    font-weight: bold;
+}
+
+#stats{ 
+    font-weight: normal;
+}
+
+.list-group-item{
+    background-color: lightgrey;
+    border: 1px dashed black;
+    border-radius: 6px;
+    margin: 2%;
+}
+
+img { 
+    height: 10%;
+    width: 10%;
+}
+
+td { 
+    text-align: left;
+}
+
+#max, #min { 
+    font-style: italic;
+    font-weight: normal;
+    margin-left: 4%;
+}
+
+.sunrise, .sunset { 
+    font-weight: bold;
+}
+
+.bottom { 
+    margin-top: 5%;
+    color: darkgray;
+    text-align: center;
+}
+
+.footer-text{ 
+    color: black;
+    font-size: x-small;
+}
+
+.date { 
+    font-size: small;
+    color: black;
+}
+
+.location { 
+    font-weight: bold;
+    color:darkblue;
+    
+}
