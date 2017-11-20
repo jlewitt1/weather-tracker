@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import WeatherItem from './WeatherItem';
 import capitalize from 'capitalize';
+
 // import AutosizeInput from 'react-input-autosize';
 
 
@@ -10,11 +11,9 @@ class SearchBar extends Component {
         
         this.state = { //entire component will re-render when state changes
             value: '',
-            entered: false,
-            checked: false
+            checked: false,
         };
         // this.handleChange = this.handleChange.bind(this);
-        // this.toggle = this.toggle.bind(this);   
     }
 
     handleChange(event) { 
@@ -28,17 +27,11 @@ class SearchBar extends Component {
             console.log("setTimeout");
             this.timeout = null;
             this.setState({ 
-                value: val,            
-                checked: !this.state.checked
+                value: val, 
+                checked: true           
             });         
         }, 1000);       
     }
-
-    // toggle() { 
-    //     this.setState({
-    //         entered: !this.state.entered,
-    //     })
-    // }
 
     render() { 
         console.log("render()");
@@ -49,21 +42,24 @@ class SearchBar extends Component {
                         {capitalize.words((this.state.value))}</span>:<br/><br/>
                     </h3> 
             : null;
-        const weatherItem =  <WeatherItem city={this.state.value} />
+        const weatherItem =  <WeatherItem city={this.state.value} checked={this.state.checked} />
         console.log("WeatherItem",weatherItem);
+
         return (  
-        <div className="col-md-12 holder">
-            <div className = "searchBar">    
-                <input type="text" onBlur={this.handleChange.bind(this)} placeholder="Enter City..."/> 
-            </div>
-            <div>
-                {content}
+            <div className="col-md-12 holder">
+                <div className = "searchBar">    
+                    <input type="text" onBlur={this.handleChange.bind(this)} placeholder="Enter City..."/> 
+                    <br/> <br/>
+                    {/* <button id="btn" type="submit" className="btn btn-secondary">Submit</button> */}
+                </div>
+                <div>
+                    {content}
+                    <br/>
+                </div>
+                {weatherItem}
+                {/* <WeatherItem city={this.state.value}/> */}
                 <br/>
             </div>
-            {weatherItem}
-            {/* <WeatherItem city={this.state.value}/> */}
-            <br/>
-        </div>
         );
     }
 }

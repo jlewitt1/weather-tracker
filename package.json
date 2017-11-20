@@ -9,6 +9,7 @@
     "moment": "^2.19.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-hide-div": "^1.0.1",
     "react-input-autosize": "^2.0.1",
     "react-responsive-carousel": "^3.1.28",
     "react-scripts": "1.0.17",

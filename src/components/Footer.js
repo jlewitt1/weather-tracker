@@ -1,5 +1,6 @@
 import React from 'react';
 
+//stateless component
 const Footer = (props) => { 
     const date = new Date().toDateString();
     

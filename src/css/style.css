@@ -93,6 +93,18 @@ td {
 
 .location { 
     font-weight: bold;
-    color:darkblue;
-    
+    color:darkblue;   
 }
+
+.hidden { 
+    display: none;
+}
+
+/* #btn:hover { 
+    background-color: lightslategrey;
+    color: white;
+}
+
+#btn { 
+    color: gray;
+} */
